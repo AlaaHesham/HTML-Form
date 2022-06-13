@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Application Form</title>
+    <style>
+        h1{
+            text-align:center;
+        }
+        form {
+            width: 75%;
+            height: 80%;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+            border: 1px solid black;
+        }
+
+        #attachFile {
+            background-color: indigo;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            margin-top: 1rem;
+        }
+        fieldset{
+            border: 1px solid gray;
+            margin:10px;
+            padding: 15px;
+
+        }
+
+        textarea{
+            width: 40%;
+            height: 120px;
+        }
+
+        #button {
+            text-align: center;
+            margin-left: 40%;
+            padding: 10px;
+            background-color: indigo;
+            color: white;
+            border: none;
+            border-radius: 0.3rem;
+        }
+        #button:hover{
+            background-color:blueviolet;
+        }
+        #attachFile:hover {
+            background-color: blueviolet;
+        }
+        select:hover{
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+<body style=" background-color:crimson ; text-align:center">
+    <form style="background-color:whitesmoke" action="HTMLPage2.html">
+        <h1>Application</h1>
+        <p><b>Note:</b> Form is to be completed at least 21 days perior to date</p> 
+        <fieldset>
+            <legend><b>Personal Details</b></legend><br><br>
+            <label>Name: </label>
+            <input type="text" placeholder="Enter name here"><br><br>
+
+            <label>Address: </label>
+            <input type="text" placeholder="Enter address here"><br><br>
+
+            <label>Email: </label>
+            <input type="email" placeholder="Enter email here"><br><br>
+
+            <label>Phone Number: </label>
+            <input type="tel" placeholder="Enter 10 digit number "><br><br>
+
+            <p>Gender</p>
+
+            <input type="radio" name="gender">
+            <label>Male</label> <br />
+
+
+            <input type="radio" name="gender">
+            <label>Female</label> <br />
+
+
+            <input type="radio" name="gender">
+            <label>Other</label> <br><br>
+
+            <label>Date Of Birth</label>
+            <input type="date"> <br />
+
+
+        </fieldset>
+        
+
+        <fieldset >
+
+            <p>Check Major</p>
+
+            <input type="checkbox" name="major">
+            <label>MET</label> <br />
+
+
+            <input type="checkbox" name="major">
+            <label>DMET</label> <br />
+
+
+            <input type="checkbox" name="major">
+            <label>IET</label> <br>
+
+            <input type="checkbox" name="major">
+            <label>EMS</label> <br><br>
+
+
+
+        </fieldset>
+
+        <fieldset >
+            <label>Age Category:</label>
+            <select>
+                <option>16-18</option>
+                <option>19-22</option>
+                <option>22-24</option>
+                <option>25 or older</option>
+            </select>
+            <label>Education Level Completed:</label>
+            <select>
+                <option>University</option>
+                <option>School</option>
+                <option>None</option>
+            </select>
+            <br />
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Essay Section</b></legend>
+            <p>In 50 words or more introduce yourself</p>
+            <textarea placeholder="Enter text here"></textarea>
+
+            <p>Please upload contact details for 2 references</p>
+            <textarea placeholder="Enter text here"></textarea>
+            <br>
+            <br>
+            <br>
+            <span>Upload personal photo here:  </span>
+            <input type="file" id="actual-btn" hidden />
+            <label for="actual-btn" id="attachFile">Attach Files</label>
+
+
+        </fieldset>
+
+        <input id="button" type="submit" value="Send Your Application" >
+    </form>
+</body>
+</html>
